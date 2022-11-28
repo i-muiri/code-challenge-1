@@ -1,14 +1,14 @@
-document.getElementById("grossButton").onclick = function(){
-
+document.getElementById("grossButton").onclick = function(){ //HTML DOM element to activate button function
+ 
 
     
-    let salary = parseInt(document.getElementById("salaryText").value)
-    let allowance = parseInt(document.getElementById("allowanceText").value)
+    let salary = parseInt(document.getElementById("salaryText").value)//HTML DOM method to read textbox conetent
+    let allowance = parseInt(document.getElementById("allowanceText").value) //HTML DOM method to read textbox conetent
     let gross = (salary + allowance)
     console.log("Your gross salary is", gross)
 
-    function computeNet(NHIF, NSSF, PAYE, netSalary){
-        function computeNHIF(){
+    function computeNet(NHIF, NSSF, PAYE, netSalary){ //function to compute net salary after deductions
+        function computeNHIF(){ //function to compute NHIF
             if(gross<6000){
                 NHIF = 150;
             }
@@ -60,7 +60,7 @@ document.getElementById("grossButton").onclick = function(){
             }
            console.log("Your NHIF is", NHIF) 
         }
-        function computeNSSF(){
+        function computeNSSF(){ //function to compute NSSF
           
              
             NSSF = 0.06 *gross
@@ -70,7 +70,7 @@ document.getElementById("grossButton").onclick = function(){
             console.log("Your NSSF is", NSSF) 
         }
 
-        function computePAYE(taxable){
+        function computePAYE(taxable){ //function to compute PAYE
             taxable = gross - (NHIF+NSSF)
             console.log("Your taxable is",taxable)
             if (taxable<=24000){
@@ -84,6 +84,7 @@ document.getElementById("grossButton").onclick = function(){
             }
             console.log("Your PAYE is", PAYE) 
         }
+        // Call all functions to execute
         computeNHIF()
         computeNSSF()
         computePAYE()

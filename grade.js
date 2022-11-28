@@ -14,7 +14,7 @@ Grade Assigner
         var points = document.getElementById("marksText").value;
     
         
-    
+    // if statement to sort assign points to grade
         if (points>79 && points <=100){
             console.log("You had A of", points)
         }
