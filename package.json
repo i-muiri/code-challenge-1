@@ -1,0 +1,22 @@
+{
+  "name": "code-challenge-1",
+  "version": "1.0.0",
+  "description": "Phase1 Code Challenge-1",
+  "main": "grade.js",
+  "test": "browser console",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-muiri/code-challenge-1.git"
+  },
+  "keywords": [
+    "code",
+    "challenge",
+    "phase1"
+  ],
+  "author": "Ian Irungu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-muiri/code-challenge-1/issues"
+  },
+  "homepage": "https://github.com/i-muiri/code-challenge-1#readme"
+}
