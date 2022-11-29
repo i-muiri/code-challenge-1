@@ -28,11 +28,11 @@ Open a terminal / command line interface on your computer
 
 # Running the Application
 
-- Open the index.html file 
+- Open the index.html file in the browser
 
 - Right click anywhere within the page and click on Inspect
 
- If not already selected click on the console tab
+- If not already selected click on the console tab
 
 - On the web page itself enter the prompted inputs on any of the textboxes and click on the "compute or "submit" buttons and view the output on the browser console window.
 
